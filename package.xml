@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>juqiao_glove</name>
+  <version>0.1.0</version>
+  <description>
+    ROS 2 driver and RViz visualization for the Juqiao Industrial (矩侨工业)
+    fabric tactile glove (JQGY-YL-11 / JQGY-YL-31). Reads the wired-USB or
+    wireless-Bluetooth-receiver serial stream at 921600 baud, publishes a
+    256-element pressure array (uint8 and Newtons), and an IMU orientation
+    quaternion from the on-glove ICM-42688.
+  </description>
+  <maintainer email="noreply@example.com">chizelnut</maintainer>
+  <license>MIT</license>
+  <url type="repository">https://github.com/chizelnut/JQ_glove_ROS2</url>
+
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <exec_depend>python3-serial</exec_depend>
+  <exec_depend>ros2launch</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

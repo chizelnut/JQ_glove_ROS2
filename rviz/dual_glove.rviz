@@ -1,0 +1,50 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Cell Size: 0.05
+      Plane Cell Count: 20
+      Color: 160; 160; 160
+      Enabled: true
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+      Marker Scale: 0.05
+      Show Names: true
+    - Class: rviz_default_plugins/MarkerArray
+      Name: LeftGloveMarkers
+      Topic:
+        Value: /glove_left/markers
+      Enabled: true
+    - Class: rviz_default_plugins/MarkerArray
+      Name: RightGloveMarkers
+      Topic:
+        Value: /glove_right/markers
+      Enabled: true
+
+  Global Options:
+    Background Color: 24; 24; 28
+    Fixed Frame: world
+
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 0.55
+      Focal Point:
+        X: 0.0
+        Y: 0.08
+        Z: 0.0
+      Yaw: 1.5708
+      Pitch: 1.2
+      Near Clip Distance: 0.01
